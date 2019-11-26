@@ -1,6 +1,6 @@
 import React from "react";
 
-import {UserInformation} from "..//..//UserProfileComponent"
+import UserInformation from "..//..//components/UserProfileComponent";
 
 export default function UserProfile() {
 	return (

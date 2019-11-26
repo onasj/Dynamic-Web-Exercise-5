@@ -1,0 +1,15 @@
+netify.toml
+
+[build]
+	base = "."
+	publish = "./build"
+	command = "npm run build"
+
+	[[redirects]]
+		from = "/*"
+		to = "/index.html"
+		status = 200
+
+	[context.production]
+
+deploy react apps in less than 30 seconds

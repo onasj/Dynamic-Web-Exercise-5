@@ -1,5 +1,7 @@
-export React from "react";
+import React from "react";
 
-export function UserInformation() {
-	return <div>UserInformation</div>
+export default function UserInformation() {
+	return (
+		<div>UserInformation</div>
+	)
 }
