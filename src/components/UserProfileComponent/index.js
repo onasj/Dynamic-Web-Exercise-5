@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function UserInformation() {
+export default function UserInformation({email}) {
 	return (
-		<div>UserInformation</div>
+		<div>Logged in user email is {email}</div>
 	)
 }
