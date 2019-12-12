@@ -10,6 +10,7 @@ import UserProfile from "./pages/UserProfile"
 import Signup from "./pages/Signup"
 import Logout from "./pages/Logout"
 import Header from "./components/Header"
+import Dashboard from "./pages/Dashboard"
 
 const firebaseConfig = {
   apiKey: "AIzaSyCaxSy0Z6JC91BCQy9C0JHCSgY1GUXoa_g",
@@ -109,6 +110,7 @@ function App() {
         <Route exact path="/login">
           { loggedIn ? <Redirect to="/" /> : <Login loginFunction={loginFunction} /> }
         </Route>
+        <Route exact path="/dashboard" component={Dashboard}/>
       </Router>
     </div>
   );
